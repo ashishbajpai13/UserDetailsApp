@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_the_user_details">Enter the user details</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_number">Enter your contact number</string>
+    <string name="enter_your_dob">Enter your DOB</string>
+    <string name="enter_your_address">Enter your address</string>
+    <string name="enter_your_city">Enter your city</string>
+    <string name="choose_your_state">Select your state</string>
+    <string name="choose_your_country">Select your country</string>
+    <string name="enter_your_pincode">Enter your pincode</string>
+    <string name="submit">Submit</string>
+    <string name="user_details">User Details</string>
+    <string name="data_updated">Data updated</string>
+    <string name="user_kyc_details">User KYC Details</string>
+    <string name="user_complete_profile">User Complete Profile</string>
+    <string name="enter_the_user_kyc_details">Enter the user KYC details</string>
+    <string name="enter_your_gstin_no">Enter your GSTIN No.</string>
+    <string name="enter_your_pan_no">Enter your PAN No.</string>
+    <string name="enter_your_aadhar_number">Enter your Aadhar No.</string>
+    <string name="enter_your_dl_no">Enter your Driving Licence No.</string>
+    <string name="enter_your_voter_id">Enter your Voter Id</string>
+    <string name="enter_your_upi_id">Enter your UPI Id</string>
+    <string name="complete_user_profile_message">Please fill in the user details</string>
+    <string name="no_data_found">No user data found. Please enter the user or kyc details to proceed with the download.</string>
+    <string name="download_failed">Couldn\'t download the file at the moment. Please try again later.</string>
+    <string name="ok">OK</string>
+    <string name="file_downloaded_message">File downloaded successfully. You can find it in %s</string>
+</resources>

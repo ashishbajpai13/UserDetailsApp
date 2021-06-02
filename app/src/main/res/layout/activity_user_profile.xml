@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.activities.UserProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/backIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back"/>
+
+        <ImageButton
+            android:id="@+id/downloadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_file_download"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/userDetailsTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            app:layout_constraintTop_toBottomOf="@id/backIv"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="@string/user_details"/>
+
+        <LinearLayout
+            android:id="@+id/userDetailsContainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/userDetailsTitleText"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/fillUserDetailsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/userDetailsContainerLayout"
+            android:layout_marginVertical="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="visible"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/darker_gray"
+            android:text="@string/complete_user_profile_message"/>
+
+        <View
+            android:id="@+id/horizontalLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:alpha="0.2"
+            app:layout_constraintTop_toBottomOf="@id/fillUserDetailsTv"
+            android:layout_marginVertical="10dp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/userKYCDetailsTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginVertical="20dp"
+            app:layout_constraintTop_toBottomOf="@id/horizontalLine"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="@string/user_kyc_details"/>
+
+        <LinearLayout
+            android:id="@+id/userKYCDetailsContainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/userKYCDetailsTitleText"
+            android:layout_marginVertical="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
